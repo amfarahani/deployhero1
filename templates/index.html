@@ -6,11 +6,12 @@
 </head>
 <body>
     <form action="{{ url_for('predict')}}" method="POST">
-        Sepal_Length:  <input type="number" name="sepal_length"><br>
-        Sepal_Width:   <input type="number" name="sepal_width"><br>
-        Petal_Length:  <input type="number" name="petal_length"><br>
-        Petal_Width:   <input type="number" name="petal_width"><br>
-      
+        <table>
+        <tr><td>Sepal_Length:</td><td>  <input type="number" name="sepal_length"></td></tr><br>
+        <tr><td>Sepal_Width:</td><td>   <input type="number" name="sepal_width"></td></tr><br>
+        <tr><td>Petal_Length:</td><td>  <input type="number" name="petal_length"></td></tr><br>
+        <tr><td>Petal_Width:</td><td>   <input type="number" name="petal_width"></td></tr><br>
+        </table>      
         <input type=submit    value=Submit>
    </form>
     My prediction value: {{ predict }}
